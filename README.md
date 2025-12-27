@@ -1,5 +1,8 @@
 #  Seam Carving using Dynamic Programming (LC 931)
 
+🔗 **Live Demo:** https://seam-carving-tafsdg22btaelfknshxcsn.streamlit.app/
+> Note: For smooth performance, please upload small images (recommended width < 800px).
+
 ##  Overview
 
 This project implements **seam carving**, a content-aware image resizing algorithm, using **Dynamic Programming**.
