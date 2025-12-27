@@ -1,6 +1,6 @@
-# 📌 Seam Carving using Dynamic Programming (LC 931)
+#  Seam Carving using Dynamic Programming (LC 931)
 
-## 📖 Overview
+##  Overview
 
 This project implements **seam carving**, a content-aware image resizing algorithm, using **Dynamic Programming**.
 The core idea is to repeatedly remove the **least important vertical seam** from an image, where importance is defined using an energy function.
@@ -11,7 +11,7 @@ An interactive **Streamlit app** is provided to visualize the resizing process.
 
 ---
 
-## 🧠 Key Idea: DP → Seam Carving
+##  Key Idea: DP → Seam Carving
 
 A **vertical seam** is defined as:
 
@@ -36,7 +36,7 @@ This is **exactly the same structure** as the *Minimum Falling Path Sum* problem
 
 ---
 
-## 🧮 DP Formulation
+##  DP Formulation
 
 Let `energy[i][j]` be the energy (importance) of pixel at row `i`, column `j`.
 
@@ -58,7 +58,7 @@ This formulation is directly adapted from **LC 931**, with added path reconstruc
 
 ---
 
-## ⚙️ Algorithm Steps
+##  Algorithm Steps
 
 1. Convert image to grayscale
 2. Compute energy map using Sobel gradients
@@ -69,7 +69,7 @@ This formulation is directly adapted from **LC 931**, with added path reconstruc
 
 ---
 
-## 🖼️ Streamlit App
+##  Streamlit App
 
 The Streamlit app allows users to:
 
@@ -84,8 +84,25 @@ The Streamlit app allows users to:
 This helps connect **DP theory** with **visual intuition**.
 
 ---
+##  Output (Streamlit App)
 
-## 🧑‍💻 Tech Stack
+### Original vs Carved Image
+The app displays the original image alongside the carved result after
+removing multiple low-energy vertical seams using Dynamic Programming.
+
+![App Output 1](assets/output_1.png)
+
+---
+
+### Minimum Energy Seam Visualization
+The first vertical seam (minimum falling path) is highlighted in red,
+showing how DP avoids high-energy regions.
+
+![App Output 2](assets/output_2.png)
+
+
+---
+##  Tech Stack
 
 * Python
 * NumPy
@@ -94,7 +111,7 @@ This helps connect **DP theory** with **visual intuition**.
 
 ---
 
-## ⏱️ Time & Space Complexity
+##  Time & Space Complexity
 
 Let:
 
@@ -153,7 +170,7 @@ Upload a **small image (recommended width < 800px)** for smooth performance.
 
 ---
 
-## ✨ Takeaway
+##  Takeaway
 
 This project demonstrates how a **standard DP problem** can be extended into a **practical, visual application**, reinforcing both algorithmic understanding and system-level thinking.
 
